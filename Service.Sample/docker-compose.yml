@@ -6,8 +6,8 @@ services:
     container_name: sample_service
     build:
       context: .
-    ports:
-      - 80:80
+#    ports:
+#      - 80:80
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     volumes:

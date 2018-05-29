@@ -3,7 +3,7 @@ Description=Dotnet Core Demo service
 
 
 [Service]
-ExecStart=/usr/bin/dotnet Sample.Service.dll
+ExecStart=/usr/bin/dotnet /app/output/Sample.Service.dll
 WorkingDirectory=/app
 User=dotnetuser
 Group=dotnetuser
