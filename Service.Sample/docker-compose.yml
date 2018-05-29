@@ -1,0 +1,15 @@
+﻿version: '3'
+
+services:
+  api:
+    image: sample/service
+    container_name: sample_service
+    build:
+      context: .
+    ports:
+      - 80:80
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    volumes:
+      - ./output:/app/output
+#    depends_on:
