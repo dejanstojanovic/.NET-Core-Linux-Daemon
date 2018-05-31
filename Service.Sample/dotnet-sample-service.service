@@ -3,10 +3,10 @@ Description=Dotnet Core Demo service
 
 
 [Service]
-ExecStart=/usr/bin/dotnet /home/dejan/SampleService/publish/Sample.Service.dll
-WorkingDirectory=/app
-User=dotnetuser
-Group=dotnetuser
+ExecStart=/home/dejan/dotnet /home/dejan/SampleService/publish/Sample.Service.dll
+WorkingDirectory=/home/dejan/SampleService/publish/
+User=dejan
+Group=dejan
 Restart=on-failure
 SyslogIdentifier=dotnet-sample-service
 PrivateTemp=true

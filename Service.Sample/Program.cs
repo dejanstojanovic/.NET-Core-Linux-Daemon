@@ -22,7 +22,7 @@ namespace Service.Sample
                 Directory.CreateDirectory(outFolderPath);
             }
 
-            Console.WriteLine($"Output file: {outFilePath}");
+            //Console.WriteLine($"Output file: {outFilePath}");
 
             File.AppendAllLines(outFilePath, new List<String>() { "------------------- SERVICE START ------------------- " }, Encoding.UTF8);
 
@@ -30,7 +30,7 @@ namespace Service.Sample
             {
                 File.AppendAllLines(outFilePath, new List<String>() { DateTime.Now.ToString() }, Encoding.UTF8);
 
-                Console.WriteLine(DateTime.Now);
+                //Console.WriteLine(DateTime.Now);
 
                 Thread.Sleep(5000);
             }
